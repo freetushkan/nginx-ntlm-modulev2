@@ -698,7 +698,7 @@ ngx_http_upstream_ntlm_close_handler(ngx_event_t *ev)
 {
     ngx_http_upstream_ntlm_cache_t  *item;
     ngx_connection_t                *c;
-    int                              n;
+    int                              n = 0;
     char                             buf[1];
 
     /*
